@@ -1,7 +1,7 @@
-id=template
-name=Template Module
-version=v1
-versionCode=1
-author=topjohnwu
-description=A short description
+id=busybox-ndk-nolinks
+name=busybox-ndk-nolinks
+version=1.29.3
+versionCode=12930
+author=nonnymoose
+description=busybox-ndk, but without symlinking any programs to the busybox binary
 minMagisk=17000

@@ -52,15 +52,6 @@ print_modname() {
 # List all directories you want to directly replace in the system
 # Check the documentations for more info about how Magic Mount works, and why you need this
 
-# This is an example
-REPLACE="
-/system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
-"
-
-# Construct your own list here, it will override the example above
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
 "
@@ -85,6 +76,7 @@ set_permissions() {
 
   # The following is default permissions, DO NOT remove
   set_perm_recursive  $MODPATH  0  0  0755  0644
+  # the default permissions will work for our copy of busybox :)
 }
 
 ##########################################################################################
@@ -96,4 +88,3 @@ set_permissions() {
 # update-binary. Refrain from adding code directly into update-binary, as it will make it
 # difficult for you to migrate your modules to newer template versions.
 # Make update-binary as clean as possible, try to only do function calls in it.
-
